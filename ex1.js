@@ -2,9 +2,8 @@
 function run() {
   console.log("Start");
   setTimeout(() => console.log("Middle"), 0);
-  setTimeout(() => console.log("End"), 2000);
+  setTimeout(() => console.log("End"), 10);
   
 }
 
 if (typeof module !== "undefined") module.exports = { run };
-run();

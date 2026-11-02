@@ -19,8 +19,8 @@ function run() {
     orders = count;
   });
 
-  console.log("User: " + user);
-  console.log("Orders: " + orders);
+  setTimeout(() => console.log("User: " + user), 80);
+  setTimeout(() => console.log("Orders: " + orders), 90);
 }
 
 if (typeof module !== "undefined") module.exports = { run };

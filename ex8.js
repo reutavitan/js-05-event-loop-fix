@@ -2,15 +2,16 @@
 function run() {
   const steps = ["Step 1", "Step 2", "Step 3"];
 
-  for (var i = 0; i < steps.length; i++) {
+  for (let i = 0; i < steps.length; i++) {
     setTimeout(() => {
       setMessage(steps[i]);
       addLine(steps[i]);
-    }, 10);
+    }, 10 * (i + 1));
   }
-
-  setMessage("Done!");
-  addLine("Done!");
+  setTimeout(() => {
+    setMessage("Done!");
+    addLine("Done!");
+  }, 60);
 }
 
 if (typeof module !== "undefined") module.exports = { run };
